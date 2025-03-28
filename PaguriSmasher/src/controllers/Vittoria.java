@@ -12,6 +12,6 @@ public class Vittoria {
     private ImageView victory;
     @FXML
     public void initialize() {
-        victory.setImage(new Image(new File("src/images/win.jpeg").toURI().toString()));
+        victory.setImage(new Image(new File("PaguriSmasher/src/images/win.jpeg").toURI().toString()));
     }
 }

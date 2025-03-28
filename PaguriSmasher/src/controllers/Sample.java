@@ -36,7 +36,7 @@ public class Sample{
     private ImageView sfondo;
     @FXML
     public void initialize() {
-        sfondo.setImage(new Image(new File("src/images/tenor.png").toURI().toString()));
+        sfondo.setImage(new Image(new File("PaguriSmasher/src/images/tenor.png").toURI().toString()));
     }
 
     @FXML
@@ -89,14 +89,14 @@ public class Sample{
         gc.setLineWidth(1);
 
         Sprite piedino = new Sprite();
-        piedino.setImage(new Image(new File("src/images/piedino.png").toURI().toString()));
+        piedino.setImage(new Image(new File("PaguriSmasher/src/images/piedino.png").toURI().toString()));
         piedino.setPosition(1, 1);
 
         ArrayList<Sprite> paguroneList = new ArrayList<Sprite>();
 
         for (int i = 0; i < 50; i++) {
             Sprite pagurone = new Sprite();
-            pagurone.setImage(new Image(new File("src/images/pagurone.png").toURI().toString()));
+            pagurone.setImage(new Image(new File("PaguriSmasher/src/images/pagurone.png").toURI().toString()));
             double px = 1700 * Math.random() + 50;
             double py = 800 * Math.random() + 50;
             pagurone.setPosition(px, py);
