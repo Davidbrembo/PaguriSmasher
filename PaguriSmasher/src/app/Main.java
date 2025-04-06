@@ -19,7 +19,7 @@ public class Main extends Application {
         Scene scene1 = new Scene(root, 1000, 600);
         
         theStage.setScene(scene1);
-        theStage.setTitle("Smash all the paguri");
+        theStage.setTitle("Smash all the paguri🐚");
         theStage.setResizable(false);
         theStage.show();
     }

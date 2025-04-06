@@ -100,8 +100,13 @@ public class Sample{
         for (int i = 0; i < 50; i++) {
             Sprite pagurone = new Sprite();
             pagurone.setImage(new Image(new File("PaguriSmasher/src/images/pagurone.png").toURI().toString()));
-            double px = currentStage.getWidth() * Math.random();
-            double py = currentStage.getHeight() * Math.random();
+            
+            double marginX = currentStage.getWidth() * 0.05;
+            double marginY = currentStage.getHeight() * 0.05;
+
+            double px = marginX + (currentStage.getWidth() - 3.5 * marginX) * Math.random();
+            double py = marginY + (currentStage.getHeight() - 3.5 * marginY) * Math.random();
+
             pagurone.setPosition(px, py);
             paguroneList.add(pagurone);
         }
